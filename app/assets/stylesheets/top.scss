@@ -209,7 +209,8 @@
   th {
     text-decoration: underline;
   }
-  th,tr{
+  th,
+  tr {
     line-height: 4rem;
     white-space: nowrap;
   }
@@ -246,7 +247,8 @@
   text-align: center;
 }
 
-.contact_telephone,.contact_mail{
+.contact_telephone,
+.contact_mail {
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 1.5rem;
@@ -255,6 +257,15 @@
 //---------------------------responsive
 
 @media screen and (max-width: 768px) {
+  //---------------------------top
+  .top_title {
+    font-size: 3rem;
+  }
+
+  .top_sub_title {
+    font-size: 0.8rem;
+  }
+
   //---------------------------works
   .works_item_center,
   .works_item_left,
