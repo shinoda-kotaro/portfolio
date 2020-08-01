@@ -1,3 +1,173 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//---------------------------header
+
+#logo{
+  font-size: 40px;
+}
+
+.nav-item{
+  font-size: 20px;
+}
+
+//---------------------------portfolio
+
+.top_image{
+  width: 100%;
+  min-height: 800px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  //背景
+  background-image: url(top_image.jpg);
+  background-size: cover;
+  //子要素の中央寄せ
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.top_image::before{
+  content: '';
+  position: absolute;
+  background: inherit;
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+
+.top_title{
+  margin: auto;
+  font-size: 100px;
+  color: #FF33FF;
+  text-shadow: 5px 5px 8px #333366;
+  margin-bottom: 50px;
+  letter-spacing: 10px;
+}
+
+.top_sub_title{
+  font-size: 20px;
+  color: #EEFFFF;
+  letter-spacing: 10px;
+  text-decoration: underline;
+}
+
+//---------------------------works
+
+.works_container{
+  width: 100%;
+  background-color: #B5EAD7;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.works_title{
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.works_item_container{
+  width: 100%;
+  font-size: 0;
+}
+
+.works_item_left,.works_item_center,.works_item_right{
+  display: inline-block;
+}
+
+.works_item{
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.works_item_left{
+  width: 30%;
+  min-height: 500px;
+  .works_item{
+    width: 100%;
+    height: 300px;
+    &:first-child{
+      background-image: url(works_1.jpg);
+    }
+    &:last-child{
+      background-image: url(works_2.jpg);
+    }
+  }
+}
+
+.works_item_center{
+  width: 40%;
+  .works_item{
+    width: 100%;
+    height: 600px;
+    background-image: url(works_3.jpg);
+  }
+}
+
+.works_item_right{
+  width: 30%;
+  min-height: 500px;
+  .works_item{
+    width: 100%;
+    height: 300px;
+    &:first-child{
+      background-image: url(works_4.jpg);
+    }
+    &:last-child{
+      background-image: url(works_5.jpg);
+    }
+  }
+}
+
+//---------------------------about
+
+.about_container{
+  width: 100%;
+  min-height: 500px;
+  background-color: #fff;
+  padding-top: 10px;
+}
+
+.about_title{
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+
+//---------------------------skill
+
+.skill_container{
+  width: 100%;
+  padding: 20px;
+  background-color: #212529;
+}
+
+.skill_title{
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.skill_table_container{
+  width: 80%;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+.skill_table th{
+  text-decoration: underline;
+}
