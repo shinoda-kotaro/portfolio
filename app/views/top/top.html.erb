@@ -39,8 +39,11 @@
     <div class="about_profile_container">
       <p class="about_name">Kotaro Shinoda</p>
       <p class="about_profile">
+        <i class="fas fa-birthday-cake"></i>
         2000 11 16<br>
+        <i class="fas fa-male"></i>
         male <br>
+        <i class="fas fa-graduation-cap"></i>
         Waseda University <br>
       </p>
     </div>
@@ -49,8 +52,8 @@
 
 <div class="skill_container" id="4">
   <p class="skill_title">Skill</p>
-  <div class="skill_table_container table-responsive-sm">
-    <table class="table table-dark table-borderless center-block skill_table">
+  <div class="skill_table_container table-responsive">
+    <table class="table center-block skill_table">
       <tr>
         <th>Language</th>
         <td>HTML</td>
@@ -69,15 +72,75 @@
       </tr>
     </table>
   </div>
+
+  <div class="skill_responsive_container">
+    <div class="accordion" id="collapse-accordion">
+      <div class="skill_language">
+        <div class="skill_language_header">
+          <button class="btn btn-success btn-block btn-info" type="button" data-toggle="collapse"
+            data-target="#collapse-accordion-1" aria-expanded="true" aria-controls="collapse-accordion-1">
+            Language
+          </button>
+        </div>
+        <div id="collapse-accordion-1" class="collapse" aria-labelledby="headingOne">
+          <div class="skill_language_body">
+            <ul class="list-group">
+              <li class="list-group-item">HTML</li>
+              <li class="list-group-item">CSS</li>
+              <li class="list-group-item">Ruby</li>
+              <li class="list-group-item">Ruby on Rails</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill_OS">
+        <div class="skill_OS_header">
+          <button class="btn btn-success btn-block btn-info" type="button" data-toggle="collapse"
+            data-target="#collapse-accordion-2" aria-expanded="true" aria-controls="collapse-accordion-2">
+            OS
+          </button>
+        </div>
+        <div id="collapse-accordion-2" class="collapse" aria-labelledby="headingOne">
+          <div class="skill_OS_body">
+            <ul class="list-group">
+              <li class="list-group-item">Windows</li>
+              <li class="list-group-item">CentOs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill_DE">
+        <div class="skill_DE_header">
+          <button class="btn btn-success btn-block btn-info" type="button" data-toggle="collapse"
+            data-target="#collapse-accordion-3" aria-expanded="true" aria-controls="collapse-accordion-3">
+            Development Environment
+          </button>
+        </div>
+        <div id="collapse-accordion-3" class="collapse" aria-labelledby="headingOne">
+          <div class="skill_OS_body">
+            <ul class="list-group">
+              <li class="list-group-item">vagrant</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
 
 <div class="contact_container" id="5">
   <p class="contact_title">Contact</p>
   <div class="contact_wrapper">
     <div class="contact_telephone_container">
-      <p class="contact_telephone">telephone: 000-0000-0000</p>
+      <i class="fas fa-phone fa-7x"></i>
+      <p class="contact_telephone">number: 000-0000-0000</p>
     </div>
     <div class="contact_mail_container">
+      <i class="fas fa-envelope fa-7x"></i>
       <p class="contact_mail">mail: example@example.com</p>
     </div>
   </div>

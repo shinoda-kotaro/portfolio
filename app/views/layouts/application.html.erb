@@ -3,6 +3,9 @@
 
 <head>
   <title>Portfolio</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
@@ -11,29 +14,60 @@
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= yield :js %>
+
+  <script src="https://kit.fontawesome.com/879a61aa86.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top header_menu">
-      <%= link_to "Portfolio", "#", id: "logo", class: "navbar-brand" %>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <%= link_to "Top" , "#1" , class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Works" , "#2" , class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "About" , "#3" , class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Skill" , "#4" , class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Contact" , "#5" , class: 'nav-link' %>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top header_menu">
+      <%= link_to "Portfolio", "#1", id: "logo", class: "navbar-brand" %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <%= link_to "#1" do %>
+            <span class="nav-link">
+              <i class="fas fa-home"></i>
+              Top
+            </span>
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "#2" do %>
+            <span class="nav-link">
+              <i class="fas fa-pen"></i>
+              Works
+            </span>
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "#3" do %>
+            <span class="nav-link">
+              <i class="fas fa-user"></i>
+              About
+            </span>
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "#4" do %>
+            <span class="nav-link">
+              <i class="fas fa-laptop"></i>
+              Skill
+            </span>
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "#5" do %>
+            <span class="nav-link">
+              <i class="fas fa-phone"></i>
+              Contact
+              <% end %>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 

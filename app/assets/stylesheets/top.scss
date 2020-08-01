@@ -96,7 +96,6 @@
 
 .works_item_left {
   width: 30%;
-  min-height: 500px;
   .works_item {
     width: 100%;
     height: 300px;
@@ -120,7 +119,6 @@
 
 .works_item_right {
   width: 30%;
-  min-height: 500px;
   .works_item {
     width: 100%;
     height: 300px;
@@ -158,25 +156,23 @@
 }
 
 .about_img_container {
-  width: 30%;
+  width: 300px;
 }
 
 .about_profile_container {
   width: 30%;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .about_img {
-  width: 80%;
+  width: 300px;
   height: 0;
-  padding-bottom: 80%;
+  padding-bottom: 300px;
   border-radius: 50%;
   background-image: url(profile_2.jpg);
   background-size: cover;
   background-position: center;
-}
-
-.about_profile_container {
-  text-align: center;
 }
 
 .about_name {
@@ -185,6 +181,7 @@
 
 .about_profile {
   line-height: 3rem;
+  font-size: 1.3rem;
 }
 
 //---------------------------skill
@@ -192,14 +189,13 @@
 .skill_container {
   width: 100%;
   padding: 20px;
-  background-color: #212529;
+  background-color: #f8f6c5;
 }
 
 .skill_title {
   font-size: 50px;
   text-align: center;
   text-decoration: underline;
-  color: #fff;
 }
 
 .skill_table_container {
@@ -208,8 +204,19 @@
   margin: 0 auto;
 }
 
-.skill_table th {
-  text-decoration: underline;
+.skill_table {
+  font-size: 1.3rem;
+  th {
+    text-decoration: underline;
+  }
+  th,tr{
+    line-height: 4rem;
+    white-space: nowrap;
+  }
+}
+
+.skill_responsive_container {
+  display: none;
 }
 
 //---------------------------contact
@@ -226,7 +233,9 @@
   text-decoration: underline;
 }
 
-.contact_wrapper{
+.contact_wrapper {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -235,4 +244,70 @@
 .contact_telephone_container,
 .contact_mail_container {
   text-align: center;
+}
+
+.contact_telephone,.contact_mail{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+//---------------------------responsive
+
+@media screen and (max-width: 768px) {
+  //---------------------------works
+  .works_item_center,
+  .works_item_left,
+  .works_item_right {
+    display: block;
+    width: 100%;
+  }
+
+  .works_item_center {
+    height: 400px;
+    .works_item {
+      height: 400px;
+    }
+  }
+
+  .works_item_left,
+  .works_item_right {
+    height: 200px;
+    font-size: 0;
+    .works_item {
+      display: inline-block;
+      width: 50%;
+      height: 200px;
+    }
+  }
+
+  //---------------------------about
+
+  .about_profile_container {
+    width: 100%;
+  }
+
+  //---------------------------skill
+  .skill_table_container {
+    display: none;
+  }
+
+  .skill_responsive_container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .skill_language,
+  .skill_OS,
+  .skill_DE {
+    margin-bottom: 20px;
+  }
+
+  //---------------------------skill
+
+  .contact_telephone_container,
+  .contact_mail_container {
+    width: 100%;
+  }
 }
