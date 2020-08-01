@@ -2,14 +2,18 @@
 <%= stylesheet_link_tag 'top' %>
 <% end %>
 
-<div class="top_image">
+<% content_for :js do %>
+<%= javascript_include_tag 'top'%>
+<% end %>
+
+<div class="top_image" id="1">
   <div class="top_title_container">
     <h1 class="top_title">Portfolio</h1>
     <p class="top_sub_title">Rails Engineer</p>
   </div>
 </div>
 
-<div class="works_container">
+<div class="works_container" id="2">
   <p class="works_title">Works</p>
   <div class="works_item_container">
     <div class="works_item_left">
@@ -26,7 +30,7 @@
   </div>
 </div>
 
-<div class="about_container">
+<div class="about_container" id="3">
   <p class="about_title">About</p>
   <div class="about_block_container">
     <div class="about_img_container">
@@ -43,7 +47,7 @@
   </div>
 </div>
 
-<div class="skill_container">
+<div class="skill_container" id="4">
   <p class="skill_title">Skill</p>
   <div class="skill_table_container table-responsive-sm">
     <table class="table table-dark table-borderless center-block skill_table">
@@ -64,5 +68,17 @@
         <td>Vagrant</td>
       </tr>
     </table>
+  </div>
+</div>
+
+<div class="contact_container" id="5">
+  <p class="contact_title">Contact</p>
+  <div class="contact_wrapper">
+    <div class="contact_telephone_container">
+      <p class="contact_telephone">telephone: 000-0000-0000</p>
+    </div>
+    <div class="contact_mail_container">
+      <p class="contact_mail">mail: example@example.com</p>
+    </div>
   </div>
 </div>

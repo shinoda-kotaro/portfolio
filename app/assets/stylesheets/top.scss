@@ -157,11 +157,11 @@
   justify-content: center;
 }
 
-.about_img_container{
+.about_img_container {
   width: 30%;
 }
 
-.about_profile_container{
+.about_profile_container {
   width: 30%;
 }
 
@@ -175,7 +175,7 @@
   background-position: center;
 }
 
-.about_profile_container{
+.about_profile_container {
   text-align: center;
 }
 
@@ -183,7 +183,7 @@
   font-size: 40px;
 }
 
-.about_profile{
+.about_profile {
   line-height: 3rem;
 }
 
@@ -210,4 +210,29 @@
 
 .skill_table th {
   text-decoration: underline;
+}
+
+//---------------------------contact
+
+.contact_container {
+  background-color: #8d99af;
+  overflow: hidden;
+  width: 100%;
+}
+
+.contact_title {
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contact_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contact_telephone_container,
+.contact_mail_container {
+  text-align: center;
 }

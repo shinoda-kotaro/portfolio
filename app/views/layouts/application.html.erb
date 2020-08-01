@@ -10,27 +10,28 @@
   <%= yield :css %>
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= yield :js %>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top header_menu">
       <%= link_to "Portfolio", "#", id: "logo", class: "navbar-brand" %>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <%= link_to "Top" , "#" , class: 'nav-link' %>
+          <%= link_to "Top" , "#1" , class: 'nav-link' %>
         </li>
         <li class="nav-item">
-          <%= link_to "Works" , "#" , class: 'nav-link' %>
+          <%= link_to "Works" , "#2" , class: 'nav-link' %>
         </li>
         <li class="nav-item">
-          <%= link_to "About" , "#" , class: 'nav-link' %>
+          <%= link_to "About" , "#3" , class: 'nav-link' %>
         </li>
         <li class="nav-item">
-          <%= link_to "Skill" , "#" , class: 'nav-link' %>
+          <%= link_to "Skill" , "#4" , class: 'nav-link' %>
         </li>
         <li class="nav-item">
-          <%= link_to "Contact" , "#" , class: 'nav-link' %>
+          <%= link_to "Contact" , "#5" , class: 'nav-link' %>
         </li>
       </ul>
     </nav>
